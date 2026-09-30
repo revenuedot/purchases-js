@@ -1,0 +1,16 @@
+{
+  "note": "Fork of RevenueCat's MIT SDK, maintained by RevenueDot, not affiliated with RevenueCat.",
+  "pipeline": "https://github.com/revenuedot/revenuedot/tree/main/scripts/forks",
+  "rules": "scripts/forks/rules/purchases-js.json",
+  "rulesSha256": "42c40a957429292a9f99fd53adfd274138f0bdc7e60ad4efa9ba28d0b5e1f012",
+  "upstream": {
+    "repo": "https://github.com/RevenueCat/purchases-js",
+    "mergeBase": "227b6202bc107fab7fd4b8aa4bfe514290996dff"
+  },
+  "apiHost": "https://api.revenuedot.app",
+  "signingPublicKey": "gXdn2hmqR/TbdtQwK02laE0YgFz0Rtf918LICLrgZhg=",
+  "publishes": [
+    "npm @revenuedot/purchases-js",
+    "npm @revenuedot/purchases-js-vega"
+  ]
+}

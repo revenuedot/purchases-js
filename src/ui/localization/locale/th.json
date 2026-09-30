@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "ต่ออายุ {{frequency}}",
   "product_info.continues_until_cancelled": "ต่อเนื่องจนกว่าจะยกเลิก",
   "product_info.cancel_anytime": "ยกเลิกได้ตลอดเวลา",
-  "payment_entry_page.payment_step_title": "การชำระเงินอย่างปลอดภัยโดย RevenueCat",
+  "payment_entry_page.payment_step_title": "การชำระเงินอย่างปลอดภัยโดย RevenueDot",
   "payment_entry_page.button_pay": "ชำระเงินตอนนี้",
   "payment_entry_page.button_start_trial": "เริ่มทดลองใช้",
   "success_page.purchase_successful": "การชำระเงินเสร็จสมบูรณ์",

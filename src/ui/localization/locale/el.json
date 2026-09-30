@@ -35,7 +35,7 @@
   "product_info.renewal_frequency": "Ανανεώνεται {{frequency}}",
   "product_info.continues_until_cancelled": "Συνεχίζεται μέχρι την ακύρωση",
   "product_info.cancel_anytime": "Ακύρωση ανά πάσα στιγμή",
-  "payment_entry_page.payment_step_title": "Ασφαλής ολοκλήρωση αγοράς από την RevenueCat",
+  "payment_entry_page.payment_step_title": "Ασφαλής ολοκλήρωση αγοράς από την RevenueDot",
   "payment_entry_page.button_pay": "Πληρωμή τώρα",
   "payment_entry_page.button_start_trial": "Έναρξη δοκιμής",
   "success_page.purchase_successful": "Η πληρωμή ολοκληρώθηκε",

@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "Uusiutuu {{frequency}}",
   "product_info.continues_until_cancelled": "Jatkuu, kunnes peruutetaan",
   "product_info.cancel_anytime": "Peruuta milloin tahansa",
-  "payment_entry_page.payment_step_title": "Suojautunut kassatoiminto RevenueCatin kautta",
+  "payment_entry_page.payment_step_title": "Suojautunut kassatoiminto RevenueDotin kautta",
   "payment_entry_page.button_pay": "Maksa nyt",
   "payment_entry_page.button_start_trial": "Aloita kokeilujakso",
   "success_page.purchase_successful": "Maksaminen onnistui",

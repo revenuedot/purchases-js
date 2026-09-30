@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "每 {{frequency}} 續約",
   "product_info.continues_until_cancelled": "持續到取消",
   "product_info.cancel_anytime": "隨時取消",
-  "payment_entry_page.payment_step_title": "RevenueCat 安全結帳",
+  "payment_entry_page.payment_step_title": "RevenueDot 安全結帳",
   "payment_entry_page.button_pay": "立即付款",
   "payment_entry_page.button_start_trial": "開始試用",
   "success_page.purchase_successful": "付款完成",

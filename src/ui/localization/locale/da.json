@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "Fornyes {{frequency}}",
   "product_info.continues_until_cancelled": "Fortsætter indtil annulleret",
   "product_info.cancel_anytime": "Annuller når som helst",
-  "payment_entry_page.payment_step_title": "Sikker betaling via RevenueCat",
+  "payment_entry_page.payment_step_title": "Sikker betaling via RevenueDot",
   "payment_entry_page.button_pay": "Betal nu",
   "payment_entry_page.button_start_trial": "Start prøveperiode",
   "success_page.purchase_successful": "Betaling gennemført",

@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "Продлевается {{frequency}}",
   "product_info.continues_until_cancelled": "Продолжается до отмены",
   "product_info.cancel_anytime": "Отменить в любое время",
-  "payment_entry_page.payment_step_title": "Безопасная оплата через RevenueCat",
+  "payment_entry_page.payment_step_title": "Безопасная оплата через RevenueDot",
   "payment_entry_page.button_pay": "Оплатить сейчас",
   "payment_entry_page.button_start_trial": "Начать пробный период",
   "success_page.purchase_successful": "Оплата завершена",

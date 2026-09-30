@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "מתחדש {{frequency}}",
   "product_info.continues_until_cancelled": "נמשך עד ביטול",
   "product_info.cancel_anytime": "ניתן לבטל בכל עת",
-  "payment_entry_page.payment_step_title": "קופה מאובטחת באמצעות RevenueCat",
+  "payment_entry_page.payment_step_title": "קופה מאובטחת באמצעות RevenueDot",
   "payment_entry_page.button_pay": "שלם עכשיו",
   "payment_entry_page.button_start_trial": "התחל ניסיון",
   "success_page.purchase_successful": "התשלום הושלם",

@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "Wordt verlengd {{frequency}}",
   "product_info.continues_until_cancelled": "Wordt voortgezet tot annulering",
   "product_info.cancel_anytime": "Annuleer op elk gewenst moment",
-  "payment_entry_page.payment_step_title": "Veilige afrekening via RevenueCat",
+  "payment_entry_page.payment_step_title": "Veilige afrekening via RevenueDot",
   "payment_entry_page.button_pay": "Nu betalen",
   "payment_entry_page.button_start_trial": "Start proefperiode",
   "success_page.purchase_successful": "Betaling voltooid",

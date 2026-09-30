@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "Gia hạn {{frequency}}",
   "product_info.continues_until_cancelled": "Tiếp tục cho đến khi hủy",
   "product_info.cancel_anytime": "Hủy bất cứ lúc nào",
-  "payment_entry_page.payment_step_title": "Thanh toán an toàn bởi RevenueCat",
+  "payment_entry_page.payment_step_title": "Thanh toán an toàn bởi RevenueDot",
   "payment_entry_page.button_pay": "Thanh toán ngay",
   "payment_entry_page.button_start_trial": "Bắt đầu dùng thử",
   "success_page.purchase_successful": "Thanh toán hoàn tất",

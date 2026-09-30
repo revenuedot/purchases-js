@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "Obnavlja se {{frequency}}",
   "product_info.continues_until_cancelled": "Nastavlja se dok se ne otkaže",
   "product_info.cancel_anytime": "Otkažite u bilo kojem trenutku",
-  "payment_entry_page.payment_step_title": "Sigurna naplata putem RevenueCat",
+  "payment_entry_page.payment_step_title": "Sigurna naplata putem RevenueDot",
   "payment_entry_page.button_pay": "Plati sada",
   "payment_entry_page.button_start_trial": "Počni probno razdoblje",
   "success_page.purchase_successful": "Uplata je uspješna",

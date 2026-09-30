@@ -15,7 +15,7 @@ export interface HttpConfig {
   proxyURL?: string;
   /**
    * Override the base URL for analytics/events tracking in local development.
-   * Default: the built-in analytics endpoint (e.revenue.cat).
+   * Default: the built-in analytics endpoint (the API host).
    * This value should never end with a trailing slash.
    * @internal
    */

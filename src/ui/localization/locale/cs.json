@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "Obnovuje se {{frequency}}",
   "product_info.continues_until_cancelled": "Pokračuje, dokud není zrušeno",
   "product_info.cancel_anytime": "Zrušit kdykoli",
-  "payment_entry_page.payment_step_title": "Bezpečné placení přes RevenueCat",
+  "payment_entry_page.payment_step_title": "Bezpečné placení přes RevenueDot",
   "payment_entry_page.button_pay": "Platit nyní",
   "payment_entry_page.button_start_trial": "Spustit zkušební verzi",
   "success_page.purchase_successful": "Platba dokončena",
