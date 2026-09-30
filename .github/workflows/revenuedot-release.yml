@@ -1,12 +1,14 @@
 # RevenueDot release: publishes @revenuedot/purchases-js and @revenuedot/purchases-js-vega to npm with trusted
-# publishing (OIDC, no token). A push of tag `<version>-revenuedot` publishes; a manual run with dry_run=true builds,
-# tests and runs `npm publish --dry-run`. Versions already on the registry are skipped, so reruns are safe.
+# publishing (OIDC, no token). A push of tag `<version>-revenuedot` publishes. A push to a `revenuedot/release-*`
+# branch, or a manual run with dry_run=true, builds, tests and runs `npm publish --dry-run`. Versions already on the
+# registry are skipped, so reruns are safe.
 # Fork pipeline: https://github.com/revenuedot/revenuedot/tree/main/scripts/forks
 name: RevenueDot release
 
 on:
   push:
     tags: ["*-revenuedot"]
+    branches: ["revenuedot/release-*"]
   workflow_dispatch:
     inputs:
       dry_run:
@@ -29,7 +31,7 @@ jobs:
       contents: read
       id-token: write
     env:
-      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || 'false' }}
+      DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) || (github.event_name == 'push' && github.ref_type != 'tag') }}
       HUSKY: "0"
     steps:
       - uses: actions/checkout@v4
