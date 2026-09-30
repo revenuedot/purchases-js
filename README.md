@@ -1,3 +1,6 @@
+> [!NOTE]
+> **RevenueDot fork.** This is [RevenueDot](https://github.com/revenuedot/revenuedot)'s MIT-licensed fork of RevenueCat's `purchases-js`, kept in sync with upstream. It keeps the same API, so existing RevenueCat integrations keep working, and it works with the open-source RevenueDot server, self-hosted or in RevenueDot Cloud. **Status: pre-alpha.** RevenueDot builds of this SDK are not published to package registries yet; the text below is the upstream README. RevenueDot is not affiliated with RevenueCat, Inc.
+
 <h3 align="center">😻 In-App Subscriptions Made Easy 😻</h3>
 <h4 align="center">🕸️ For the web 🕸️</h4>
 
