@@ -1,0 +1,104 @@
+# RevenueDot release: publishes @revenuedot/purchases-js and @revenuedot/purchases-js-vega to npm with trusted
+# publishing (OIDC, no token). A push of tag `<version>-revenuedot` publishes. A push to a `revenuedot/release-*`
+# branch, or a manual run with dry_run=true, builds, tests and runs `npm publish --dry-run`. Versions already on the
+# registry are skipped, so reruns are safe.
+# Fork pipeline: https://github.com/revenuedot/revenuedot/tree/main/scripts/forks
+name: RevenueDot release
+
+on:
+  push:
+    tags: ["*-revenuedot"]
+    branches: ["revenuedot/release-*"]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Build, test and run npm publish --dry-run only"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: revenuedot-release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    environment: production
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) || (github.event_name == 'push' && github.ref_type != 'tag') }}
+      HUSKY: "0"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+
+      - name: npm >= 11.5.1 (trusted publishing)
+        run: |
+          npm install -g npm@latest
+          npm --version
+
+      - name: Check the tag matches the package versions
+        run: |
+          set -euo pipefail
+          pkg_version() { node -p "require('./$1/package.json').version"; }
+          root=$(pkg_version .); vega=$(pkg_version vega)
+          echo "package.json $root, vega/package.json $vega"
+          [ "$root" = "$vega" ] || { echo "::error::package.json ($root) and vega/package.json ($vega) disagree"; exit 1; }
+          if [ "$GITHUB_REF_TYPE" = "tag" ]; then
+            want="${GITHUB_REF_NAME%-revenuedot}"
+            [ "$want" = "$root" ] || { echo "::error::tag $GITHUB_REF_NAME expects version $want, package.json has $root"; exit 1; }
+          elif [ "$DRY_RUN" != "true" ]; then
+            echo "::error::a real publish must run on a tag <version>-revenuedot (this run is on branch $GITHUB_REF_NAME)"; exit 1
+          fi
+
+      - name: Install (pnpm from packageManager)
+        run: |
+          corepack enable
+          pnpm --version
+          pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Unit tests
+        run: pnpm test
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Check the bundles use RevenueDot hosts
+        run: |
+          set -euo pipefail
+          for f in dist/Purchases.es.js dist/Purchases.umd.js vega/dist/Purchases.vega.es.js; do
+            grep -q 'api.revenuedot.app' "$f" || { echo "::error::$f does not contain api.revenuedot.app"; exit 1; }
+            if grep -Eq 'api\.revenuecat\.com|e\.revenue\.cat' "$f"; then echo "::error::$f contains a RevenueCat host"; exit 1; fi
+          done
+          echo "bundles ok"
+
+      - name: Publish (dependency order; skips versions already on npm)
+        run: |
+          set -euo pipefail
+          publish() {
+            local dir=$1 name version
+            name=$(node -p "require('./$dir/package.json').name")
+            version=$(node -p "require('./$dir/package.json').version")
+            if npm view "$name@$version" version >/dev/null 2>&1; then
+              echo "$name@$version is already on npm, skipping"; return 0
+            fi
+            if [ "$DRY_RUN" = "true" ]; then
+              (cd "$dir" && npm publish --provenance --access public --dry-run)
+            else
+              (cd "$dir" && npm publish --provenance --access public)
+            fi
+          }
+          publish .
+          publish vega
