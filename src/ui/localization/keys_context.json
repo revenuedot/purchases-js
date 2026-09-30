@@ -45,7 +45,7 @@
   "email_entry_page.email_input_label": "Label for the email input field (e.g. 'Email').",
   "email_entry_page.email_input_placeholder": "Placeholder for the email input field (e.g. 'john@appleseed.com').",
   "email_entry_page.button_continue": "Button text prompting the user to continue with the flow.",
-  "payment_entry_page.payment_step_title": "Title indicating a secure checkout process by RevenueCat.",
+  "payment_entry_page.payment_step_title": "Title indicating a secure checkout process by RevenueDot.",
   "payment_entry_page.trial_subscription_terms_info": "Legal text for trial subscriptions indicating that the user authorizes charges in accordance with the app’s terms. {{price}} is replaced with the renewal price, {{perFrequency}} is replaced with the standard frequency, {{renewalDate}} is replaced with the renewal date.",
   "payment_entry_page.subscription_terms_info": "Legal text for non-trial subscriptions indicating that the user authorizes charges in accordance with the app’s terms.",
   "payment_entry_page.otp_terms_info": "Legal text for one-time purchases indicating that the user authorizes charges in accordance with the app’s terms. {{price}} is replaced with the purchase price.",

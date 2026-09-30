@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "Se reînnoiește {{frequency}}",
   "product_info.continues_until_cancelled": "Continuă până la anulare",
   "product_info.cancel_anytime": "Anulare oricând",
-  "payment_entry_page.payment_step_title": "Plata securizată prin RevenueCat",
+  "payment_entry_page.payment_step_title": "Plata securizată prin RevenueDot",
   "payment_entry_page.button_pay": "Plătește acum",
   "payment_entry_page.button_start_trial": "Începe perioada de probă",
   "success_page.purchase_successful": "Plata efectuată",

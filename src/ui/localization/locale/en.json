@@ -41,7 +41,7 @@
   "product_info.renewal_frequency": "Renews {{frequency}}",
   "product_info.continues_until_cancelled": "Continues until cancelled",
   "product_info.cancel_anytime": "Cancel anytime",
-  "payment_entry_page.payment_step_title": "Secure checkout by RevenueCat",
+  "payment_entry_page.payment_step_title": "Secure checkout by RevenueDot",
   "payment_entry_page.trial_subscription_terms_info": "After your trial ends, you will be charged {{price}} {{perFrequency}} starting {{renewalDate}}. You can cancel any time before this date.",
   "payment_entry_page.subscription_terms_info": "By subscribing, you agree to allow {{appName}} to charge you according to their terms until you cancel.",
   "payment_entry_page.subscription_terms_info_without_app_name": "By subscribing, you agree to recurring charges according to the applicable terms until you cancel.",

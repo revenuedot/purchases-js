@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "Verlängert sich {{frequency}}",
   "product_info.continues_until_cancelled": "Läuft bis zur Kündigung",
   "product_info.cancel_anytime": "Jederzeit kündbar",
-  "payment_entry_page.payment_step_title": "Sicherer Checkout über RevenueCat",
+  "payment_entry_page.payment_step_title": "Sicherer Checkout über RevenueDot",
   "payment_entry_page.button_pay": "Jetzt bezahlen",
   "payment_entry_page.button_start_trial": "Testversion starten",
   "success_page.purchase_successful": "Zahlung abgeschlossen",

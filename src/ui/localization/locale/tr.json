@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "{{frequency}} sıklığında yenilenir",
   "product_info.continues_until_cancelled": "İptal edilene kadar devam eder",
   "product_info.cancel_anytime": "İstediğiniz zaman iptal edebilirsiniz",
-  "payment_entry_page.payment_step_title": "RevenueCat ile güvenli ödeme",
+  "payment_entry_page.payment_step_title": "RevenueDot ile güvenli ödeme",
   "payment_entry_page.button_pay": "Şimdi öde",
   "payment_entry_page.button_start_trial": "Denemeyi başlat",
   "success_page.purchase_successful": "Ödeme tamamlandı",

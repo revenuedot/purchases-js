@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "Es renova {{frequency}}",
   "product_info.continues_until_cancelled": "Continua fins que es cancel·li",
   "product_info.cancel_anytime": "Cancel·la en qualsevol moment",
-  "payment_entry_page.payment_step_title": "Pagament segur amb RevenueCat",
+  "payment_entry_page.payment_step_title": "Pagament segur amb RevenueDot",
   "payment_entry_page.button_pay": "Paga ara",
   "payment_entry_page.button_start_trial": "Comença la prova",
   "success_page.purchase_successful": "Pagament complet",

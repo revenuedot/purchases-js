@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "Se renueva {{frequency}}",
   "product_info.continues_until_cancelled": "Continua hasta que se cancele",
   "product_info.cancel_anytime": "Cancelar en cualquier momento",
-  "payment_entry_page.payment_step_title": "Pago seguro mediante RevenueCat",
+  "payment_entry_page.payment_step_title": "Pago seguro mediante RevenueDot",
   "payment_entry_page.button_pay": "Pagar ahora",
   "payment_entry_page.button_start_trial": "Comenzar prueba",
   "success_page.purchase_successful": "Pago completado",

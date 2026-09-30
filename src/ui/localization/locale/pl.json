@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "Odnawialny co {{frequency}}",
   "product_info.continues_until_cancelled": "Kontynuowane do momentu anulowania",
   "product_info.cancel_anytime": "Możesz anulować w dowolnym momencie",
-  "payment_entry_page.payment_step_title": "Bezpieczna płatność przez RevenueCat",
+  "payment_entry_page.payment_step_title": "Bezpieczna płatność przez RevenueDot",
   "payment_entry_page.button_pay": "Zapłać teraz",
   "payment_entry_page.button_start_trial": "Rozpocznij okres próbny",
   "success_page.purchase_successful": "Płatność zakończona",

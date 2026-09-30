@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "{{frequency}} gyakorisággal megújul",
   "product_info.continues_until_cancelled": "Folytatódik, amíg le nem mondják",
   "product_info.cancel_anytime": "Bármikor lemondható",
-  "payment_entry_page.payment_step_title": "Biztonságos fizetés a RevenueCat-en keresztül",
+  "payment_entry_page.payment_step_title": "Biztonságos fizetés a RevenueDot-en keresztül",
   "payment_entry_page.button_pay": "Fizetés most",
   "payment_entry_page.button_start_trial": "Próbaidőszak indítása",
   "success_page.purchase_successful": "Fizetés sikeres",

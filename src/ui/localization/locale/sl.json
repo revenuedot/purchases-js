@@ -41,7 +41,7 @@
   "product_info.renewal_frequency": "Se obnovi {{frequency}}",
   "product_info.continues_until_cancelled": "Traja do preklica",
   "product_info.cancel_anytime": "Prekličete lahko kadar koli",
-  "payment_entry_page.payment_step_title": "Varno plačilo prek RevenueCat",
+  "payment_entry_page.payment_step_title": "Varno plačilo prek RevenueDot",
   "payment_entry_page.trial_subscription_terms_info": "Po koncu preizkusnega obdobja vam bo zaračunano {{price}} {{perFrequency}} z začetkom {{renewalDate}}. Prekličete lahko kadar koli pred tem datumom.",
   "payment_entry_page.subscription_terms_info": "Z naročnino se strinjate, da vam {{appName}} zaračunava v skladu s svojimi pogoji, dokler ne prekličete.",
   "payment_entry_page.subscription_terms_info_without_app_name": "Z naročnino se strinjate s ponavljajočimi se bremenitvami v skladu z veljavnimi pogoji, dokler ne prekličete.",

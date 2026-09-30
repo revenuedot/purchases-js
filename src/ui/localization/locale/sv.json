@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "Förnyas {{frequency}}",
   "product_info.continues_until_cancelled": "Gäller tills avbokad",
   "product_info.cancel_anytime": "Avboka när som helst",
-  "payment_entry_page.payment_step_title": "Säker betalning via RevenueCat",
+  "payment_entry_page.payment_step_title": "Säker betalning via RevenueDot",
   "payment_entry_page.button_pay": "Betala nu",
   "payment_entry_page.button_start_trial": "Starta provperiod",
   "success_page.purchase_successful": "Betalningen är klar",

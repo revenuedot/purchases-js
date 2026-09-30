@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "يتم التجديد {{frequency}}",
   "product_info.continues_until_cancelled": "يستمر حتى يتم إلغاؤه",
   "product_info.cancel_anytime": "يمكن الإلغاء في أي وقت",
-  "payment_entry_page.payment_step_title": "الدفع الآمن عبر RevenueCat",
+  "payment_entry_page.payment_step_title": "الدفع الآمن عبر RevenueDot",
   "payment_entry_page.button_pay": "ادفع الآن",
   "payment_entry_page.button_start_trial": "ابدأ التجربة",
   "success_page.purchase_successful": "تم الدفع بنجاح",

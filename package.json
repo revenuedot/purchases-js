@@ -1,6 +1,6 @@
 {
-  "name": "@revenuecat/purchases-js",
-  "description": "Web subscriptions made easy. Powered by RevenueCat",
+  "name": "@revenuedot/purchases-js",
+  "description": "Web subscriptions made easy. Powered by RevenueCat (Fork of RevenueCat's MIT SDK, maintained by RevenueDot, not affiliated with RevenueCat.)",
   "private": false,
   "version": "1.67.0",
   "type": "module",
@@ -20,14 +20,14 @@
       "require": "./dist/style.css"
     }
   },
-  "author": "RevenueCat, Inc.",
+  "author": "RevenueDot (https://revenuedot.app)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RevenueCat/purchases-js.git"
+    "url": "git+https://github.com/revenuedot/purchases-js.git"
   },
   "bugs": {
-    "url": "https://github.com/RevenueCat/purchases-js/issues"
+    "url": "https://github.com/revenuedot/purchases-js/issues"
   },
   "keywords": [
     "revenuecat",
@@ -38,7 +38,7 @@
   "scripts": {
     "watch": "vite build --config vite.watch.config.js --watch",
     "build": "tsc && vite build && pnpm run build:vega",
-    "build:dev": "tsc && vite build --mode development && pnpm --filter @revenuecat/purchases-js-vega build --mode development",
+    "build:dev": "tsc && vite build --mode development && pnpm --filter @revenuedot/purchases-js-vega build --mode development",
     "build:dev-watch": "tsc && vite build --mode development --config vite.watch.config.js --watch",
     "preview": "vite preview",
     "lint": "prettier --check . && eslint src/ vega/src/",
@@ -57,7 +57,7 @@
     "extract-api": "api-extractor run --local --verbose && api-extractor run --local --verbose --config vega/api-extractor.json",
     "check-version-consistency": "node scripts/check-version-consistency.mjs",
     "prepare": "husky",
-    "build:vega": "pnpm --filter @revenuecat/purchases-js-vega build"
+    "build:vega": "pnpm --filter @revenuedot/purchases-js-vega build"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",

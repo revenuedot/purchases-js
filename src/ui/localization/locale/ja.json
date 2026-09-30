@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "{{frequency}}で更新",
   "product_info.continues_until_cancelled": "キャンセルされるまで継続されます",
   "product_info.cancel_anytime": "いつでもキャンセルできます",
-  "payment_entry_page.payment_step_title": "RevenueCatによる安全なチェックアウト",
+  "payment_entry_page.payment_step_title": "RevenueDotによる安全なチェックアウト",
   "payment_entry_page.button_pay": "今すぐ支払う",
   "payment_entry_page.button_start_trial": "トライアルを開始",
   "success_page.purchase_successful": "支払いが完了しました",

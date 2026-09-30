@@ -33,7 +33,7 @@
   "product_info.renewal_frequency": "{{frequency}}마다 갱신",
   "product_info.continues_until_cancelled": "취소될 때까지 계속됩니다.",
   "product_info.cancel_anytime": "언제든지 취소 가능",
-  "payment_entry_page.payment_step_title": "RevenueCat을 통한 안전한 결제",
+  "payment_entry_page.payment_step_title": "RevenueDot을 통한 안전한 결제",
   "payment_entry_page.button_pay": "지금 결제",
   "payment_entry_page.button_start_trial": "체험 시작",
   "success_page.purchase_successful": "결제가 완료되었습니다.",
