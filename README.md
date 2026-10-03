@@ -15,9 +15,7 @@ This is RevenueDot's MIT fork of RevenueCat's `@revenuecat/purchases-js`: the sa
 ```sh
 npm install @revenuedot/purchases-js
 ```
-
 Or keep every import as it is with an npm alias in `package.json`:
-
 ```json
 "@revenuecat/purchases-js": "npm:@revenuedot/purchases-js@1.67.0"
 ```
@@ -28,7 +26,7 @@ Or keep every import as it is with an npm alias in `package.json`:
 import { Purchases } from "@revenuedot/purchases-js";
 
 const purchases = Purchases.configure({
-  apiKey: "test_...", // the web app's public key from the RevenueDot dashboard
+  apiKey: "test_...",      // the web app's public key from the RevenueDot dashboard
   appUserId: "user_123",
   // Self-hosted server only: RevenueDot Cloud (https://api.revenuedot.app) is the default. No trailing slash.
   httpConfig: { proxyURL: "https://revenuedot.example.com" },
@@ -57,7 +55,6 @@ RevenueDot is not affiliated with RevenueCat, Inc. RevenueCat's copyright notice
 ---
 
 ## Upstream README (RevenueCat's, unchanged)
-
 <!-- revenuedot:readme:end -->
 
 <h3 align="center">😻 In-App Subscriptions Made Easy 😻</h3>
