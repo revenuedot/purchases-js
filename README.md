@@ -1,11 +1,64 @@
-<!-- revenuedot:banner:start -->
-> [!NOTE]
-> **Fork of RevenueCat's MIT SDK, maintained by RevenueDot, not affiliated with RevenueCat.** It keeps the upstream public API (`Purchases.configure`, `Purchases.shared`, every class and method name), so app code and RevenueCat's guides work unchanged. It talks to [RevenueDot](https://github.com/revenuedot/revenuedot) at `https://api.revenuedot.app` by default (`setProxyURL` still points it at a self-hosted server) and verifies RevenueDot's response signatures. RevenueCat's copyright notice is kept in `LICENSE`. Patches: [scripts/forks](https://github.com/revenuedot/revenuedot/tree/main/scripts/forks). **Status: publishing to package registries is in progress.**
->
-> **Install:** `npm install @revenuedot/purchases-js`, or keep your imports with an alias: `"@revenuecat/purchases-js": "npm:@revenuedot/purchases-js@<version>"`. API keys keep their prefixes (`rcb_`, `test_`, `strp_`, `pdl_`).
->
-> The upstream README follows, unchanged. Where it says RevenueCat's dashboard or API, use RevenueDot's.
-<!-- revenuedot:banner:end -->
+<!-- revenuedot:readme:start -->
+<p align="center"><a href="https://revenuedot.app"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/revenuedot/revenuedot/main/brand/kit/wordmark/revenuedot-lockup-white.svg">
+  <img alt="RevenueDot" src="https://raw.githubusercontent.com/revenuedot/revenuedot/main/brand/kit/wordmark/revenuedot-lockup-black.svg" height="40">
+</picture></a></p>
+
+# RevenueDot Web SDK
+
+This is RevenueDot's MIT fork of RevenueCat's `@revenuecat/purchases-js`: the same classes and method names, pointed at a RevenueDot server ([RevenueDot Cloud](https://app.revenuedot.app/signup) at `https://api.revenuedot.app`, or one you host) with RevenueDot's response-signing key built in, and kept in sync with upstream.
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![npm](https://img.shields.io/npm/v/@revenuedot/purchases-js?label=npm)](https://www.npmjs.com/package/@revenuedot/purchases-js) [![Upstream](https://img.shields.io/badge/upstream-RevenueCat%2Fpurchases--js_1.67.0-lightgrey)](https://github.com/RevenueCat/purchases-js)
+
+## Install
+
+```sh
+npm install @revenuedot/purchases-js
+```
+
+Or keep every import as it is with an npm alias in `package.json`:
+
+```json
+"@revenuecat/purchases-js": "npm:@revenuedot/purchases-js@1.67.0"
+```
+
+## Configure
+
+```ts
+import { Purchases } from "@revenuedot/purchases-js";
+
+const purchases = Purchases.configure({
+  apiKey: "test_...", // the web app's public key from the RevenueDot dashboard
+  appUserId: "user_123",
+  // Self-hosted server only: RevenueDot Cloud (https://api.revenuedot.app) is the default. No trailing slash.
+  httpConfig: { proxyURL: "https://revenuedot.example.com" },
+});
+```
+
+The fork already trusts RevenueDot's signing key, so no signature or verification setting is needed. Analytics events follow `proxyURL` too, so `collectAnalyticsEvents` can stay on, and the checkout reads "Secure checkout by RevenueDot". Full guide: https://revenuedot.app/docs/sdks/web.
+
+## What RevenueDot adds
+
+- **Self-host for free, or use RevenueDot Cloud** free up to $10,000 a month of tracked revenue ([pricing](https://revenuedot.app/pricing)).
+- **The same REST API and webhook payloads** as RevenueCat, so your backend and integrations keep working ([API reference](https://revenuedot.app/docs/api)).
+- **Entitlements shared with your iOS and Android apps,** Test Store purchases in the browser, and real payments through RevenueDot's hosted Stripe checkout ([web billing guide](https://revenuedot.app/docs/guides/web-billing)).
+- **A one-line migration:** point the stock SDK at RevenueDot with `httpConfig.proxyURL`, or install this fork and drop the line ([migration guide](https://revenuedot.app/docs/migrate)).
+
+## Links
+
+- **Docs for this SDK:** https://revenuedot.app/docs/sdks/web
+- **Example app:** https://github.com/revenuedot/examples/tree/main/web/purchases-js-vite
+- **Releases and changelog:** https://github.com/revenuedot/purchases-js/releases (tags `<upstream version>-revenuedot`; upstream's changes are in `CHANGELOG.md`)
+- **RevenueDot server and dashboard:** https://github.com/revenuedot/revenuedot
+- **Fork pipeline (what we change and how upstream is merged):** https://github.com/revenuedot/revenuedot/tree/main/scripts/forks
+
+RevenueDot is not affiliated with RevenueCat, Inc. RevenueCat's copyright notice stays in `LICENSE`; RevenueDot's changes are MIT too.
+
+---
+
+## Upstream README (RevenueCat's, unchanged)
+
+<!-- revenuedot:readme:end -->
 
 <h3 align="center">😻 In-App Subscriptions Made Easy 😻</h3>
 <h4 align="center">🕸️ For the web 🕸️</h4>
