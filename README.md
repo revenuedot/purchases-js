@@ -42,6 +42,14 @@ The fork already trusts RevenueDot's signing key, so no signature or verificatio
 - **Entitlements shared with your iOS and Android apps,** Test Store purchases in the browser, and real payments through RevenueDot's hosted Stripe checkout ([web billing guide](https://revenuedot.app/docs/guides/web-billing)).
 - **A one-line migration:** point the stock SDK at RevenueDot with `httpConfig.proxyURL`, or install this fork and drop the line ([migration guide](https://revenuedot.app/docs/migrate)).
 
+## Use with your coding agent
+
+Coding agents can read this repository's docs and code on demand, so they use the right package and imports:
+
+- **Context7:** https://context7.com/revenuedot/purchases-js
+- **DeepWiki:** https://deepwiki.com/revenuedot/purchases-js
+- **GitMCP:** https://gitmcp.io/revenuedot/purchases-js
+
 ## Links
 
 - **Docs for this SDK:** https://revenuedot.app/docs/sdks/web
