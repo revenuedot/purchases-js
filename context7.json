@@ -1,0 +1,28 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "RevenueDot Web SDK",
+  "description": "RevenueDot's MIT fork of RevenueCat's web SDK (purchases-js), pointed at RevenueDot, the open-source RevenueCat alternative for in-app purchases and subscriptions.",
+  "folders": [],
+  "excludeFolders": [
+    ".circleci",
+    ".github",
+    "fastlane",
+    ".revenuedot",
+    "scripts",
+    "api-report",
+    ".storybook",
+    "examples",
+    ".husky"
+  ],
+  "excludeFiles": [
+    "CHANGELOG.md",
+    "CHANGELOG.latest.md",
+    "CHANGELOG-LATEST.md"
+  ],
+  "rules": [
+    "Install with `npm install @revenuedot/purchases-js`, or alias it as \"@revenuecat/purchases-js\": \"npm:@revenuedot/purchases-js@<version>\" to keep existing imports.",
+    "Use `import { Purchases } from \"@revenuedot/purchases-js\"` and `Purchases.configure({ apiKey, appUserId })` with the web app's public key from the RevenueDot dashboard.",
+    "RevenueDot Cloud (https://api.revenuedot.app) is the default API host. For a self-hosted server, pass `httpConfig: { proxyURL: \"https://revenuedot.example.com\" }` with no trailing slash.",
+    "Analytics events follow `proxyURL` too, so `collectAnalyticsEvents` can stay on."
+  ]
+}
